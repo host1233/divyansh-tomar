@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Armstrong number checker</title>
+</head>
+<body>
+    
+    <script>
+function Armstrong(x){
+    let temp=x;
+     let rem ;
+     let digit =0;
+     while(x>0){
+        rem=x%10;
+        digit=digit + (rem*rem*rem);
+        x= Math.floor(x/10);
+
+     }
+     if(digit==temp){
+        return 1;
+     }
+     else{
+        return 0;
+     }
+    }
+let a=(Number(prompt("enter the value")));
+ let y=Armstrong(a);
+ if(y==1){
+    alert("this is Armstrong number " + a);
+    console.log("this is Armstrong number " + a);
+ }
+ else{
+    alert("this is  not Armstrong number " + a);
+    console.log("this is  not Armstrong number " + a);
+ }
+    </script>
+</body>
+</html>

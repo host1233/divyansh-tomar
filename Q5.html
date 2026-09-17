@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Leap_year</title>
+</head>
+<body>
+    
+    <script>
+function Leapyear(x){
+    if(x % 400==0 || (x % 4==0 && x % 100!=0))
+{
+    return 1;
+}
+else{
+    return 0;
+}
+}
+let a=(Number(prompt("enter the year")));
+ let y=Leapyear(a);
+ if(y==1){
+    alert("this is Leap year " + a);
+    console.log("this is  Leap year " + a);
+ }
+ else{
+    alert("this  year is not a Leap year " + a);
+    console.log("this year is not a Leap year  " + a);
+ }
+
+    </script>
+</body>
+</html>

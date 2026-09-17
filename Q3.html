@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>prime number checker</title>
+</head>
+<body>
+    
+    <script>
+function prime(x){
+    let count =0;
+    for(let i=2;i<x;i++){
+        if(a%2==0){
+            return 0;
+            count++;
+            break;
+        }
+    }
+    if(count==0)
+    return 1;
+}
+let a=(Number(prompt("enter the value")));
+ let y=prime(a);
+ if(y==1){
+    alert("this is prime number " + a);
+    console.log("this is prime number " + a);
+ }
+ else{
+    alert("this is  not prime number " + a)
+    console.log("this is  not prime number " + a);
+ }
+    </script>
+</body>
+</html>
